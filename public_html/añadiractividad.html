@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universidad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div style="display: flex; justify-content:space-between; align-items: flex-start; height: 100vh; padding: 0 40px;">
+            <!-- Encabezado -->
+            <a class="encabezado" style="display: flex;" align-items: center;>
+                <img src="/imagenes/universidad.png" style=" width: 100px; height:100px; margin-top: 25px; margin-right: 30px; filter: brightness(0) invert(1);">
+                <h1 class="universidad">Universidad</h1>
+                <!-- Boton Regresar -->
+                <a href="../public_html/index.html" class="boton-regresar"><b>Regresar</b></a>
+            </a>
+        </div>  
+    </nav>
+    <!-- header -->
+    <header >
+        <div class="barra-horizontal"></div>
+        <div class="texto-inicio-sesion">
+            <p><b>Añadir nueva actividad a la clase</b></p>
+        </div>
+        <div class="cuadro-blanco-largo">
+            <label for="usuario" class="etiqueta" style="font-size: 20px; margin-top: 2px;"><b>Ingrese el nombre de la actividad:</b></label>
+            <input type="text" id="tipo-act" name="tipo-act" class="input-text" style="width: 65%; margin-top: 2px;">
+            <label for="contrasenia" class="etiqueta" style="font-size: 20px;"><b>Escoja el tipo de actividad:</b></label>     
+            <table>
+                <thead>
+                    <tr>
+                        <th class="fila1"><img src="/imagenes/icono-texto.png" style="width: 20px; height: 20px; background-color: cornflowerblue;"></th> 
+                        <th class="fila1"><input type="radio" name="opciones" value="radiobuton1" class="radiobuton1"></th>
+                        <th class="fila2" style="text-align: left; font-size: 20px;">Archivo de Texto</th>
+                        <th class="fila1"><img src="/imagenes/video.png" style="width: 20px; height: 20px; background-color: cornflowerblue;"></th> 
+                        <th class="fila1"><input type="radio" name="opciones" value="radiobuton1" class="radiobuton1"></th>
+                        <th class="fila2" style="text-align: left; font-size: 20px;">Video</th>
+                        <th class="fila1"><img src="/imagenes/chat.png" style="width: 20px; height: 20px; background-color:chartreuse;"></th> 
+                        <th class="fila1"><input type="radio" name="opciones" value="radiobuton1" class="radiobuton1"></th>
+                        <th class="fila2" style="text-align: left; font-size: 20px;">Chat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="fila1"><img src="/imagenes/subiractividad.png" style="width: 20px; height: 20px; background-color: hotpink;"></th>
+                        <td class="fila1"><input type="radio" name="opciones" value="radiobuton2" class="radiobuton2"></td>
+                        <td class="fila2" style="text-align: left; font-size: 20px;">Actividad por subir</td>
+                        <th class="fila1"><img src="/imagenes/icono-foro.png" style="width: 20px; height: 20px; background-color:coral;"></th>
+                        <td class="fila1"><input type="radio" name="opciones" value="radiobuton2" class="radiobuton2"></td>
+                        <td class="fila2" style="text-align: left; font-size: 20px;">Foro</td>
+                        <th class="fila1"><img src="/imagenes/icono-evalua.png" style="width: 20px; height: 20px; background-color: hotpink;"></th>
+                        <td class="fila1"><input type="radio" name="opciones" value="radiobuton2" class="radiobuton2"></td>
+                        <td class="fila2" style="text-align: left; font-size: 20px;">Evaluación</td>
+                    </tr>
+                    <tr>
+                        <th class="fila1"><img src="/imagenes/icono-asistencia.png" style="width: 20px; height: 20px; background-color: mediumslateblue;"></td>
+                        <td class="fila1"><input type="radio" name="opciones" value="radiobuton3" class="radiobuton3"></td>
+                        <td class="fila2" style="text-align: left; font-size: 20px;">Asistencia</td>
+                        <th class="fila1"><img src="/imagenes/carpeta.png" style="width: 20px; height: 20px; background-color: mediumslateblue;"></td>
+                            <td class="fila1"><input type="radio" name="opciones" value="radiobuton3" class="radiobuton3"></td>
+                            <td class="fila2" style="text-align: left; font-size: 20px;">Carpeta</td>
+                            <th class="fila1"><img src="/imagenes/grupo.png" style="width: 20px; height: 20px; background-color: mediumslateblue;"></td>
+                                <td class="fila1"><input type="radio" name="opciones" value="radiobuton3" class="radiobuton3"></td>
+                                <td class="fila2" style="text-align: left; font-size: 20px;">Selección de grupo</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <label for="usuario" class="etiqueta" style="font-size: 20px;"><b>Descripción de la actividad:</b></label>
+                <textarea id="miTexto" name="miTexto" rows="4" cols="50" class="text-area"></textarea>
+
+            <br><br>
+            <div>
+                <label for="usuario" class="etiqueta" style="font-size: 20px;"><b>Agregar archivos adicionales a la actividad:</b></label>
+                <br><input type="file" name="subirarchivo" value="subirarchivo" class="subirarchivo"><img src="/imagenes/subirarchivo.png" class="caja-subirarchivo">
+            </div>
+
+            <!-- Boton Guardar -->
+            <a href="../public_html/principal.html" class="boton-guardar"><b>Guardar</b></a>
+            <!-- Boton Descartar -->
+            <a href="../public_html/principal.html" class="boton-descartar"><b>Descartar</b></a>
+        </div>
+    </header>
+</body>
+</html>

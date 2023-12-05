@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universidad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div style="display: flex; justify-content:space-between; align-items: flex-start; height: 100vh; padding: 0 40px;">
+            <!-- Encabezado -->
+            <a class="encabezado" style="display: flex;" align-items: center;>
+                <img src="/imagenes/universidad.png" style=" width: 100px; height:100px; margin-top: 25px; margin-right: 30px; filter: brightness(0) invert(1);">
+                <h1 class="universidad">Universidad</h1>
+                <!-- Usuario -->
+                <p class="nombre-usuario" style="display: inline;">Erika Elizabeth Estrada Chávez</p>
+                <img src="/imagenes/usuario.png" style=" filter: brightness(0) invert(1);" class="imagen">
+                <select name="rol" id="rol" class="elegir-rol">
+                    <option value="opcion1">Estudiante</option>
+                    <option value="opcion2">Docente</option>
+                </select>
+            </a>
+        </div>  
+    </nav>
+    <!-- header -->
+    <header >
+        <div class="barra-horizontal"></div>
+        <div class="titulo">
+            <p><b>Cursos Matriculados:</b></p>
+        </div>
+        <div class="cuadro-curso1" style="width: 420px; height: 250px;"></div>
+        <div class="recuadro1"><a href="../public_html/curso1.html" class="nombre-curso1"><b>Aplicaciones Informáticas II</b></a></div>
+        <div class="cuadro-curso2" style="width: 420px; height: 250px;"></div>
+        <div class="recuadro2"><a href="../public_html/iniciocorreo.html" class="nombre-curso2"><b>Técnicas de Simulación</b></a></div>
+        <div class="cuadro-curso3" style="width: 420px; height: 250px;"></div>
+        <div class="recuadro3"><a href="../public_html/iniciocorreo.html" class="nombre-curso3"><b>Validación y Verificación</b></a></div>
+    
+        <!-- Botones -->
+        <a href="../public_html/iniciosesion.html" class="boton-plan"><b>Plan Analítico Semanal</b></a>
+        <a href="../public_html/iniciosesion.html" class="boton-calendario"><b>Calendario de Actividades</b></a>
+    </header>
+</body>
+</html>

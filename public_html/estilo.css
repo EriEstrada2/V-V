@@ -1,0 +1,788 @@
+
+/* INDEX */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('https://p1.pxfuel.com/preview/294/960/948/university-student-graduation-photo-hats.jpg');
+    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh; /* 100% de la altura de la ventana */
+    width: 100%; /* 100% del ancho de la ventana */
+}
+.encabezado{
+    display: block;
+    margin-left: 80px;
+    margin-top: 30px;
+    width: 110px;
+    height: 110px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.universidad{
+    font-size: 50px;
+    vertical-align: middle;
+    margin-top: 40px;
+    color: white;
+}
+.boton{
+    background-color: #AFDCEC ;
+    border: 2px solid;
+    padding: 20px 50px;
+    font-size: 35px;
+    line-height: 1;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 70px;
+    display:inline-block;
+    text-decoration: none;
+}
+header{
+    text-align: center;
+}
+.texto-central{
+    text-align: center;
+    font-size: 50px;
+    position: fixed;
+    top: 40%;
+    left: 12%;
+    color: white;
+}
+.barra-horizontal{
+    height: 10px;
+    background-color: white;
+    position: fixed;
+    top: 25%;
+    left: 7%;
+    width: 91%;
+    margin: 0 auto;
+}
+
+/*INICIO DE SESIÓN*/
+.boton-regresar{
+    background-color: #F5B6CC;
+    border: 2px solid;
+    padding: 20px 50px;
+    font-size: 35px;
+    line-height: 1;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 70px;
+    display:inline-block;
+    text-decoration: none;
+}
+.texto-inicio-sesion{
+    text-align: center;
+    font-size: 50px;
+    position: fixed;
+    top: 28%;
+    left: 32%;
+    color: white;
+}
+.cuadro-blanco{
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    position: fixed;
+    top: 38%;
+    left: 40%;
+    width: 22%;
+    font-size: 25px;
+    text-align: left;
+}
+.etiqueta{
+    padding: 15px;
+    padding-top: 10px;
+}
+.input-text{
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    border: 2px solid;
+    font-size: 25px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.boton-iniciarS{
+    background-color: #AFDCEC ;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none;
+    position: relative;
+    left: 25%;
+    top: 15px;
+}
+.boton-correo{
+    background-color: #B6F5CF ;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none;
+    position: relative;
+    left: 15%;
+    top: 10px;
+}
+
+/*PAGINA PRINCIPAL*/
+.nombre-usuario{
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    top: 12%;
+    left: 60%;
+    color: white;
+    font-weight: bold;
+}
+.imagen{
+    width: 100px; 
+    height:100px; 
+    position: fixed;
+    text-align: left;
+    top: 7.5%;
+    right: 2%;
+}
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    position: fixed;
+    top: 30%;
+    left: 7%;
+    color: white;
+    margin-left: 10px;
+}
+.elegir-rol{
+    text-align: left;
+    position: fixed;
+    top: 18%;
+    right: 9.5%;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 7px;
+    padding: 7px 10px;
+}
+.cuadro-curso1{
+    background-color: white;
+    border: 2px solid;
+    position: fixed;
+    top: 40%;
+    left: 8%;
+    width: 25%;
+    background-image: url('https://w7.pngwing.com/pngs/553/58/png-transparent-school-supplies-icons-background-thumbnail.png');
+    background-size: contain;
+}
+.cuadro-curso2{
+    background-color: white;
+    border: 2px solid;
+    position: fixed;
+    top: 40%;
+    left: 38%;
+    width: 25%;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230702/pngtree-educational-essentials-and-technology-a-3d-rendered-back-to-school-background-image_3772672.jpg');
+    background-size: contain;
+}
+.cuadro-curso3{
+    background-color: white;
+    border: 2px solid;
+    position: fixed;
+    top: 40%;
+    left: 68%;
+    width: 25%;
+    background-image: url('https://img.freepik.com/vector-premium/fondo-educativo-garabato_650065-231.jpg');
+    background-size: contain;
+}
+.nombre-curso1{
+    color: black;
+    font-size: 25px;
+    position: fixed;
+    top: 77%;
+    left: 10.5%;
+    text-decoration: none;
+}
+.recuadro1{
+    background-color: white;
+    border: 2px solid;
+    position: fixed;
+    top: 75.5%;
+    left: 8%;
+    width: 420px; 
+    height: 49px;
+}
+.nombre-curso2{
+    color: black;
+    font-size: 25px;
+    position: fixed;
+    top: 77%;
+    left: 43%;
+    text-decoration: none;
+}
+.recuadro2{
+    background-color: white;
+    border: 2px solid;
+    position: fixed;
+    top: 75.5%;
+    left: 38%;
+    width: 420px; 
+    height: 49px;
+}
+.nombre-curso3{
+    color: black;
+    font-size: 25px;
+    position: fixed;
+    top: 77%;
+    left: 73%;
+    text-decoration: none;
+}
+.recuadro3{
+    background-color: white;
+    border: 2px solid;
+    position: fixed;
+    top: 75.5%;
+    left: 68%;
+    width: 420px; 
+    height: 49px;
+}
+.boton-plan{
+    text-decoration: none;
+    background-color: #AFDCEC ;
+    border: 2px solid;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    position: fixed;
+    top: 85%;
+    right: 4.5%;
+    display:inline-block;
+}
+.boton-calendario{
+    text-decoration: none;
+    background-color: #AFDCEC ;
+    border: 2px solid;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    position: fixed;
+    top: 92.5%;
+    right: 4.5%;
+    display:inline-block;
+}
+
+/*CURSO 1*/
+.botones-unidad{
+    position: fixed;
+    top: 28%;
+    left: 7%;
+}
+.boton-bar{
+    display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid;
+            background-color: #f5f5f5;
+            color: black;
+            padding: 3px 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.titulo-curso{
+    text-align: center;
+    font-size: 40px;
+    position: fixed;
+    top: 34%;
+    left: 35%;
+    color: white;
+    margin-left: 10px;
+}
+.cuadro{
+    background-color: white;
+    border: 2px solid;
+    position: fixed;
+    top: 42%;
+    left: 30%;
+    width: 30%;
+    font-size: 15px;
+    text-align:justify;
+}
+.cuadrito{
+    background-color: white;
+    border: 2px solid;
+    position: fixed;
+    top: 42%;
+    left: 60%;
+    width: 25%;
+    background-image: url('https://cdn.forbes.com.mx/2021/07/07-03-640x360.jpg');
+    background-size: contain;
+}
+
+.info00{
+    text-align: left;
+    font-size: 25px;
+    position: fixed;
+    top: 34%;
+    left: 7%;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.info01{
+    text-align: left;
+    font-size: 25px;
+    position: fixed;
+    top: 62%;
+    left: 7%;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.info001{
+    text-align: left;
+    font-size: 25px;
+    position: fixed;
+    top: 80%;
+    left: 7%;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.icono1{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 69%;
+    left: 18%;
+    background-color:cornflowerblue;
+}
+.icono2{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 80%;
+    left: 18%;
+    background-color: coral;
+}
+.icono3{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 90%;
+    left: 18%;
+    background-color: mediumslateblue;
+}
+.icono1-unidad2{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 41%;
+    left: 18%;
+    background-color:cornflowerblue;
+}
+.icono2-unidad2{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 52%;
+    left: 18%;
+    background-color: cornflowerblue;
+}
+.icono3-unidad2{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 90%;
+    left: 18%;
+    background-color: mediumslateblue;
+}
+.icono01-unidad2{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 69%;
+    left: 18%;
+    background-color:coral;
+}
+.icono001-unidad2{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 86%;
+    left: 18%;
+    background-color:hotpink;
+}
+
+.info{
+    text-align: left;
+    font-size: 25px;
+    position: fixed;
+    top: 63.5%;
+    left: 7%;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.info1{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 71%;
+    left: 23%;
+    color: white;
+    margin-left: 10px;
+}
+
+.info2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 82%;
+    left: 23%;
+    color: white;
+    margin-left: 10px;
+}
+.info3{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 92%;
+    left: 23%;
+    color: white;
+    margin-left: 10px;
+}
+.info1-unidad2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 43%;
+    left: 23%;
+    color: white;
+    margin-left: 10px;
+}
+
+.info2-unidad2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 54%;
+    left: 23%;
+    color: white;
+    margin-left: 10px;
+}
+.info3-unidad2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 92%;
+    left: 23%;
+    color: white;
+    margin-left: 10px;
+}
+.info01-unidad2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 71%;
+    left: 23%;
+    color: white;
+    margin-left: 10px;
+}
+.info001-unidad2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 88%;
+    left: 23%;
+    color: white;
+    margin-left: 10px;
+}
+.boton-cursos{
+    background-color: #B6F5CF;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 25px;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none;
+    position: fixed;
+    top: 92%;
+    right: 2%;
+}
+.mas{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 78%;
+    right: 5.5%;
+}
+.añadir-mas{
+    position: fixed;
+    top: 87%;
+    right: 3%;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*AÑADIR ACTIVIDAD*/
+.cuadro-blanco-largo{
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    position: fixed;
+    top: 37%;
+    left: 15%;
+    width: 75%;
+    height: 62%;
+    font-size: 25px;
+    text-align: left;
+}
+.tipo-act{
+    padding: 15px;
+    padding-top: 10px;
+}
+.opcion1{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 50%;
+    left: 38%;
+}
+.opcion1-texto{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 49.5%;
+    left: 39.5%;
+}
+.opcion2{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 54%;
+    left: 38%;
+}
+.opcion2-texto{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 53.5%;
+    left: 39.5%;
+}
+.opcion3{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 58%;
+    left: 38%;
+}
+.opcion3-texto{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 57.5%;
+    left: 39.5%;
+}
+
+.opcion4{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 50%;
+    left: 58%;
+}
+.opcion4-texto{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 49.5%;
+    left: 59.5%;
+}
+.opcion5{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 54%;
+    left: 58%;
+}
+.opcion5-texto{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 53.5%;
+    left: 59.5%;
+}
+.opcion6{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 58%;
+    left: 58%;
+}
+.opcion6-texto{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 57.5%;
+    left: 59.5%;
+}
+
+.opcion7{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 50%;
+    left: 75%;
+}
+.opcion7-texto{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 49.5%;
+    left: 76.5%;
+}
+.opcion8{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 54%;
+    left: 75%;
+}
+.opcion8-texto{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 53.5%;
+    left: 76.5%;
+}
+.opcion9{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 58%;
+    left: 75%;
+}
+.opcion9-texto{
+    text-align: left;
+    font-size: 15px;
+    position: fixed;
+    top: 57.5%;
+    left: 76.5%;
+}
+.text-area{
+    border: 2px solid;
+    border-radius: 10px;
+    position: absolute;
+    width: 71.5%;
+    height: 15%;
+}
+.subirarchivo{
+    width: 44%;
+    position: relative;
+    right: 30px;
+}
+.caja-subirarchivo{
+    width: 668px;
+    height: 165px;
+    position: absolute;
+    right: 5%;
+}
+.boton-guardar{
+    background-color: #B6F5CF;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 25px;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none;
+    position: fixed;
+    top: 91%;
+    left: 19%;
+}
+.boton-descartar{
+    background-color: #F5B6CC;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 25px;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none;
+    position: fixed;
+    top: 91%;
+    left: 30%;
+}
+
+/*TABLAS*/
+table {
+    border-collapse: collapse;
+    margin-left: 350px;
+    font-weight: bold;
+}
+.fila1{
+    width: 5%;
+    height: 5%;
+}
+.fila2{
+    width: 10%;
+    height: 5%;
+    font-size: 20px;
+    white-space: nowrap;
+}
+.fila3{
+    width: 60%;
+    height: 60%;
+}
+.fila4{
+    width: 60%;
+    height: 60%;
+    font-size: 20px;
+    white-space: nowrap;
+}
+.fila5{
+    font-size: 25px;
+    white-space: nowrap;
+    font-weight: bold;
+    color: white;
+}
+/* Estilos para las celdas */
+table, th, td {
+    border: 2px solid white; /* Borde de 1 píxel y color negro */
+    text-align: center;
+}

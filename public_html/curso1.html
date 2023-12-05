@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universidad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div style="display: flex; justify-content:space-between; align-items: flex-start; height: 100vh; padding: 0 40px;">
+            <!-- Encabezado -->
+            <a class="encabezado" style="display: flex;" align-items: center;>
+                <img src="/imagenes/universidad.png" style=" width: 100px; height:100px; margin-top: 25px; margin-right: 30px; filter: brightness(0) invert(1);">
+                <h1 class="universidad">Universidad</h1>
+                <!-- Usuario -->
+                <p class="nombre-usuario" style="display: inline;">Erika Elizabeth Estrada Chávez</p>
+                <img src="/imagenes/usuario.png" style=" filter: brightness(0) invert(1);" class="imagen">
+                <select name="rol" id="rol" class="elegir-rol">
+                    <option value="opcion1">Estudiante</option>
+                    <option value="opcion2">Docente</option>
+                </select>
+            </a>
+        </div>  
+        <div class="botones-unidad">
+            <button class="boton-bar"><a href="/public_html/curso1.html" style="text-decoration: none;">Unidad 1</a></button>
+            <button class="boton-bar"><a href="/public_html/curso1-unidad2.html" style="text-decoration: none;">Unidad 2</a></button>
+            <button class="boton-bar">Unidad 3</button>
+            <button class="boton-bar">Unidad 4</button>
+        </div>
+    </nav>
+    <!-- header -->
+    <header >
+        <div class="barra-horizontal"></div>
+        <div class="titulo-curso">
+            <p><b>Aplicaciones Informáticas II</b></p>
+        </div>
+        <div class="cuadro"><br>
+            <p style="margin-left: 5px; margin-right: 5px; margin-bottom: 5px;">Desarrollo de Aplicaciones II es un curso fundamental en la formación de los Ingenier@s de Software, que tiene como objetivo el desarrollo 
+                computacional basado en una colección de elementos, denominados objetos, que están interrelacionados y trabajan conjuntamente para resolver un problema.</p>
+                <div class="cuadrito" style="width: 200px; height: 145px;"></div>
+        </div>
+        <p class="info">Información importante para iniciar:</p>
+        <img src="/imagenes/icono-texto.png" class="icono1">
+        <p class="info1">Sílabo de la Asignatura</p>
+        <img src="/imagenes/icono-novedad.png" class="icono2">
+        <p class="info2">Informativo y Novedades</p>
+        <img src="/imagenes/icono-asistencia.png" class="icono3">
+        <p class="info3">Control de Asistencia</p>
+
+        <!-- Boton Añadir -->
+        <a href="../public_html/añadiractividad.html">
+            <img src="/imagenes/mas.png" class="mas">
+            <p class="añadir-mas">Añadir Actividad</p>
+        </a>
+        <!-- Boton Regresar -->
+        <a href="../public_html/principal.html" class="boton-cursos"><b>Mis Cursos</b></a>
+    </header>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universidad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div style="display: flex; justify-content:space-between; align-items: flex-start; height: 100vh; padding: 0 40px;">
+            <!-- Encabezado -->
+            <a class="encabezado" style="display: flex;" align-items: center;>
+                <img src="/imagenes/universidad.png" style=" width: 100px; height:100px; margin-top: 25px; margin-right: 30px; filter: brightness(0) invert(1);">
+                <h1 class="universidad">Universidad</h1>
+                <!-- Boton Regresar -->
+                <a href="../public_html/iniciosesion.html" class="boton-regresar"><b>Regresar</b></a>
+            </a>
+        </div>  
+    </nav>
+    <!-- header -->
+    <header >
+        <div class="barra-horizontal"></div>
+        <div class="texto-inicio-sesion">
+            <p><b>Sistema de autenticación</b></p>
+        </div>
+        <div class="cuadro-blanco"><br>
+            <label for="usuario" class="etiqueta"><b>Correo institucional:</b></label><br>
+            <input type="text" id="usuario" name="usuario" class="input-text"><br><br>
+            <label for="contrasenia" class="etiqueta"><b>Contraseña:</b></label><br>
+            <input type="text" id="contrasenia" name="contrasenia" class="input-text"><br>
+            <!-- Boton IniciarS -->
+            <a href="../public_html/principal.html" class="boton-iniciarS"><b>Iniciar sesión</b></a>
+            <p><br></p>
+        </div>
+    </header>
+</body>
+</html>
