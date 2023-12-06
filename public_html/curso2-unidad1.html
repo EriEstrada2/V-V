@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universidad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div style="display: flex; justify-content:space-between; align-items: flex-start; height: 100vh; padding: 0 40px;">
+            <!-- Encabezado -->
+            <a class="encabezado" style="display: flex;" align-items: center;>
+                <img src="/imagenes/universidad.png" style=" width: 100px; height:100px; margin-top: 25px; margin-right: 30px; filter: brightness(0) invert(1);">
+                <h1 class="universidad">Universidad</h1>
+                <!-- Usuario -->
+                <p class="nombre-usuario" style="display: inline;">Erika Elizabeth Estrada Chávez</p>
+                <img src="/imagenes/usuario.png" style=" filter: brightness(0) invert(1);" class="imagen">
+                <select name="rol" id="rol" class="elegir-rol">
+                    <option value="opcion1">Estudiante</option>
+                    <option value="opcion2">Docente</option>
+                </select>
+            </a>
+        </div>  
+        <div class="botones-unidad">
+            <button class="boton-bar"><a href="/public_html/curso2.html" style="text-decoration: none;">Inicio</a></button>
+            <button class="boton-bar"><a href="/public_html/curso2-unidad1.html" style="text-decoration: none;">Unidad 1</a></button>
+            <button class="boton-bar"><a href="/public_html/curso2-unidad2.html" style="text-decoration: none;">Unidad 2</a></button>
+            <button class="boton-bar"><a href="/public_html/curso2-unidad3.html" style="text-decoration: none;">Unidad 3</a></button>
+        </div>
+    </nav>
+    <!-- header -->
+    <header >
+        <div class="barra-horizontal"></div>
+        <p class="info00">Actividades de Refuerzo:</p>
+            <img src="/imagenes/icono-texto.png" class="icono1-unidad2">
+                <p class="info1-unidad2">Introducción Técnicas de Simulación</p>
+            <img src="/imagenes/video.png" class="icono2-unidad2">
+                <p class="info2-unidad2">Video de Referencia</p>
+        <p class="info01">Información importante para iniciar:</p>
+            <img src="/imagenes/icono-foro.png" class="icono01-unidad2">
+                <p class="info01-unidad2">Foro: Clasificación de la Técnicas de Simluación</p>
+        
+        <p class="info001">Actividades de Evaluación:</p>
+            <img src="/imagenes/icono-evalua.png" class="icono001-unidad2">
+                <p class="info001-unidad2">Evaluación del Primer Parcial 1</p>
+
+        <!-- Boton Añadir -->
+        <a href="../public_html/añadiractividad.html">
+            <img src="/imagenes/mas.png" class="mas">
+            <p class="añadir-mas">Añadir Actividad</p>
+        </a>
+        <!-- Boton Mis Cursos -->
+        <a href="../public_html/principal.html" class="boton-cursos"><b>Mis Cursos</b></a>
+    </header>
+</body>
+</html>

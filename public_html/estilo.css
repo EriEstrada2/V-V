@@ -342,6 +342,17 @@ header{
     background-image: url('https://cdn.forbes.com.mx/2021/07/07-03-640x360.jpg');
     background-size: contain;
 }
+.cuadrito2{
+    background-color: white;
+    border: 2px solid;
+    position: fixed;
+    top: 42%;
+    left: 60%;
+    width: 25%;
+    background-image: url('https://nirosa.es/wp-content/uploads/2023/06/Simulacio%CC%81n-de-procesos-industriales.jpg');
+    background-size: contain;
+}
+
 
 .info00{
     text-align: left;
@@ -442,7 +453,7 @@ header{
     text-align: left;
     font-size: 25px;
     position: fixed;
-    top: 63.5%;
+    top: 64%;
     left: 7%;
     color: white;
     margin-left: 10px;
@@ -792,4 +803,14 @@ table {
 table, th, td {
     border: 2px solid white; /* Borde de 1 píxel y color negro */
     text-align: center;
+}
+
+/*PLAN ANALITICO SEMANAL*/
+.opcionesAsig{
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 7px;
+    padding: 7px 10px;
 }
