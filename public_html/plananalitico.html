@@ -26,29 +26,67 @@
     <!-- header -->
     <header >
         <div class="barra-horizontal"></div>
+
         <div class="texto-inicio-sesion">
             <p><b>Plan Analítico Semanal</b></p>
         </div>
-        <div class="cuadro-blanco-largo">
-            <label for="usuario" class="etiqueta" style="font-size: 20px; margin-top: 2px;"><b>INFORMACIÓN DE LA ASIGNATURA</b></label><br>
-            <label for="contrasenia" class="etiqueta" style="font-size: 20px;"><b>Asignatura:</b></label>  
+        <div class="cuadro-blanco-largo2">
+            <label for="usuario" class="etiqueta" style="font-size: 20px; margin-top: 2px;"><b>INFORMACIÓN DE LA ASIGNATURA</b></label><br><br>
+            <label for="asignatura" class="etiqueta" style="font-size: 20px;"><b>Asignatura:</b></label>&nbsp;
             <select name="rol" id="rol" class="opcionesAsig" id="miOpcion">
-                <option value="opcion0" data-href="#"></option>
+                <option value="opcion0" data-href="#">Seleccione una opción</option>
                 <option value="opcion1" data-href="#">Aplicaciones Informáticas II</option>
                 <option value="opcion2" data-href="index.html">Técnicas de Simulación</option>
                 <option value="opcion3" data-href="index.html">Validación y Verificación</option>
             </select>
-            <label for="contrasenia" class="etiqueta" style="font-size: 20px;"><b>Código:</b></label>
-            <br>   
-            
-            <label for="usuario" class="etiqueta" style="font-size: 20px;"><b>Descripción de la actividad:</b></label>
-                <textarea id="miTexto" name="miTexto" rows="4" cols="50" class="text-area"></textarea>
+
+            <label for="codigo" class="etiqueta" style="font-size: 20px;"><b>Código:</b></label>
+            <input type="text" id="codigo" name="codigo" class="codigo">
+
+            <label for="periodo" class="etiqueta" style="font-size: 20px;"><b>Periodo Académico:</b></label>
+            <select name="rol" id="rol" class="opcionesAsig2" id="miOpcion">
+                <option value="opcion0">Seleccione una opción</option>
+                <option value="opcion1">04 Abril 2022 - 16 de Agosto 2022</option>
+                <option value="opcion2">26 de Septiembre 2022 - 2 de Marzo 2023</option>
+                <option value="opcion3">03 de Abril 2023 - 16 de Agosto 2023</option>
+                <option value="opcion4">10 de Octubre 2023 - 4 de Marzo 2024</option>
+            </select>
 
             <br><br>
-            <div>
-                <label for="usuario" class="etiqueta" style="font-size: 20px;"><b>Agregar archivos adicionales a la actividad:</b></label>
-                <br><input type="file" name="subirarchivo" value="subirarchivo" class="subirarchivo"><img src="/imagenes/subirarchivo.png" class="caja-subirarchivo">
-            </div>
+            <label for="periodo" class="etiqueta" style="font-size: 20px;"><b>Aprendizaje en contacto con el docente:</b></label>
+            <label for="modalidad" class="etiqueta" style="font-size: 20px;"><b>Modalidad:</b></label>
+            <select name="rol" id="rol" class="opcionesAsig2" id="miOpcion">
+                <option value="opcion0" data-href="#">Seleccione una opción</option>
+                <option value="opcion1" data-href="#">En línea</option>
+                <option value="opcion2" data-href="#">Hibrida</option>
+            </select>
+
+            <label for="fecha-elab" class="etiqueta" style="font-size: 20px;"><b>Fecha Elaboración:</b></label>
+            <input type="date" id="fecha-elab" name="fecha-elab" class="fecha-elab">
+
+
+            <br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="etiqueta" style="font-size: 15px;">Docencia síncrona</th>
+                        <th><input type="text" id="horaS" name="horaS" style="width: 40%; border: 2px solid; font-size: 20px; box-sizing: border-box; border-radius: 7px;"></th>
+                        <th class="etiqueta" style="font-size: 15px;">horas</th>
+                    </tr>
+                    <tbody>
+                        <th class="etiqueta" style="font-size: 15px;">Docencia asíncrona</th>
+                        <td><input type="text" id="horaS" name="horaS" style="width: 40%; border: 2px solid; font-size: 20px; box-sizing: border-box; border-radius: 7px;"></th>
+                        <td class="etiqueta" style="font-size: 15px;">horas</th>
+                    </tbody>
+                </thead>
+            </table>
+            <label for="metodologia" class="etiqueta" style="font-size: 20px;"><b>Metodología:</b></label>
+            <select name="rol" id="rol" class="opcionesAsig2" id="miOpcion">
+                <option value="opcion0" data-href="#">Seleccione una opción</option>
+                <option value="opcion1" data-href="#">Scrum</option>
+                <option value="opcion2" data-href="#">Kanban</option>
+                <option value="opcion3" data-href="#">Scrumban</option>
+            </select>
 
             <!-- Boton Guardar -->
             <a href="../public_html/principal.html" class="boton-guardar" onclick="mostrarAlerta()"><b>Guardar</b></a>

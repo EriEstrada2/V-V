@@ -812,5 +812,44 @@ table, th, td {
     font-weight: bold;
     border: 2px solid;
     border-radius: 7px;
-    padding: 7px 10px;
+    padding: 7px 2px;
+}
+.opcionesAsig2{
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 7px;
+    padding: 7px;
+}
+.codigo{
+    width: 10%;
+    border: 2px solid;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 4px 0px;
+}
+.cuadro-blanco-largo2{
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    width: 80%;
+    height: 62%;
+    font-size: 25px;
+    text-align: left;
+}
+.fecha-elab{
+    width: 15%;
+    border: 2px solid;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 4px 0px;
+}
+.docencia{
+    width: 5%;
 }
