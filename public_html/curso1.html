@@ -16,17 +16,18 @@
                 <!-- Usuario -->
                 <p class="nombre-usuario" style="display: inline;">Erika Elizabeth Estrada Chávez</p>
                 <img src="/imagenes/usuario.png" style=" filter: brightness(0) invert(1);" class="imagen">
-                <select name="rol" id="rol" class="elegir-rol">
-                    <option value="opcion1">Estudiante</option>
-                    <option value="opcion2">Docente</option>
+                <select name="rol" id="rol" class="elegir-rol" id="miOpcion">
+                    <option value="opcion1" data-href="#">Estudiante</option>
+                    <option value="opcion2" data-href="index.html">Docente</option>
                 </select>
+                <script src="hola.js"></script>
             </a>
         </div>  
         <div class="botones-unidad">
-            <button class="boton-bar"><a href="/public_html/curso1.html" style="text-decoration: none;">Unidad 1</a></button>
+            <button class="boton-bar"><a href="/public_html/curso1.html" style="text-decoration: none;">Inicio</a></button>
+            <button class="boton-bar"><a href="/public_html/curso1-unidad1.html" style="text-decoration: none;">Unidad 1</a></button>
             <button class="boton-bar"><a href="/public_html/curso1-unidad2.html" style="text-decoration: none;">Unidad 2</a></button>
-            <button class="boton-bar">Unidad 3</button>
-            <button class="boton-bar">Unidad 4</button>
+            <button class="boton-bar"><a href="/public_html/curso1-unidad3.html" style="text-decoration: none;">Unidad 3</a></button>
         </div>
     </nav>
     <!-- header -->
@@ -53,7 +54,7 @@
             <img src="/imagenes/mas.png" class="mas">
             <p class="añadir-mas">Añadir Actividad</p>
         </a>
-        <!-- Boton Regresar -->
+        <!-- Boton Mis Cursos -->
         <a href="../public_html/principal.html" class="boton-cursos"><b>Mis Cursos</b></a>
     </header>
 </body>

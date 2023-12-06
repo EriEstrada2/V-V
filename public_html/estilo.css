@@ -1,5 +1,11 @@
 
 /* INDEX */
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para pantallas más pequeñas */
+    .container {
+        width: 100%;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -710,13 +716,14 @@ header{
 .subirarchivo{
     width: 44%;
     position: relative;
-    right: 30px;
+    left: 16%;
 }
 .caja-subirarchivo{
-    width: 668px;
+    width: 675px;
     height: 165px;
     position: absolute;
-    right: 5%;
+    top: 60.5%;
+    right: 2%;
 }
 .boton-guardar{
     background-color: #B6F5CF;
