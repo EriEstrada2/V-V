@@ -31,7 +31,7 @@
             <p><b>Plan Analítico Semanal</b></p>
         </div>
         <div class="cuadro-blanco-largo2">
-            <label for="usuario" class="etiqueta" style="font-size: 20px; margin-top: 2px;"><b>INFORMACIÓN DE LA ASIGNATURA</b></label><br><br>
+            <label for="usuario" class="etiqueta" style="font-size: 30px; margin-top: 2px;"><b>INFORMACIÓN DE LA ASIGNATURA</b></label><br><br>
             <label for="asignatura" class="etiqueta" style="font-size: 20px;"><b>Asignatura:</b></label>&nbsp;
             <select name="rol" id="rol" class="opcionesAsig" id="miOpcion">
                 <option value="opcion0" data-href="#">Seleccione una opción</option>
@@ -65,21 +65,15 @@
             <input type="date" id="fecha-elab" name="fecha-elab" class="fecha-elab">
 
 
-            <br><br>
-            <table>
-                <thead>
-                    <tr>
-                        <th class="etiqueta" style="font-size: 15px;">Docencia síncrona</th>
-                        <th><input type="text" id="horaS" name="horaS" style="width: 40%; border: 2px solid; font-size: 20px; box-sizing: border-box; border-radius: 7px;"></th>
-                        <th class="etiqueta" style="font-size: 15px;">horas</th>
-                    </tr>
-                    <tbody>
-                        <th class="etiqueta" style="font-size: 15px;">Docencia asíncrona</th>
-                        <td><input type="text" id="horaS" name="horaS" style="width: 40%; border: 2px solid; font-size: 20px; box-sizing: border-box; border-radius: 7px;"></th>
-                        <td class="etiqueta" style="font-size: 15px;">horas</th>
-                    </tbody>
-                </thead>
-            </table>
+            <br>
+            <label for="docenciaS" class="etiqueta3" style="font-size: 15px;"><b>Docencia síncrona:</b></label>&nbsp;
+            <input type="text" id="horaS" name="horaS" class="horas">
+            <label for="docenciaS" class="etiqueta" style="font-size: 15px;"><b>horas</b></label>
+            <br>
+            <label for="docenciaA" class="etiqueta3" style="font-size: 15px;"><b>Docencia asíncrona:</b></label>
+            <input type="text" id="horaS" name="horaS" class="horas">
+            <label for="docenciaA" class="etiqueta" style="font-size: 15px;"><b>horas</b></label>
+
             <label for="metodologia" class="etiqueta" style="font-size: 20px;"><b>Metodología:</b></label>
             <select name="rol" id="rol" class="opcionesAsig2" id="miOpcion">
                 <option value="opcion0" data-href="#">Seleccione una opción</option>
@@ -88,6 +82,31 @@
                 <option value="opcion3" data-href="#">Scrumban</option>
             </select>
 
+            <label for="correoI" class="etiqueta" style="font-size: 20px;"><b>Correo institucional:</b></label>
+            <input type="text" id="correoI" name="correoI" class="correoI">
+
+            <br><br>
+            <label for="practicoE" class="etiqueta" style="font-size: 20px;"><b>Aprendizaje práctico experimental:</b></label>&nbsp;&nbsp;&nbsp;
+            <input type="text" id="practicoE" name="practicoE" class="horas" style="width: 10%;">
+            <label for="docenciaS" class="etiqueta" style="font-size: 20px;"><b>horas</b></label>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="practicoE" class="etiqueta" style="font-size: 20px;"><b>Aprendizaje autónomo:</b></label>
+            <input type="text" id="practicoE" name="practicoE" class="horas" style="width: 10%;">
+            <label for="docenciaS" class="etiqueta" style="font-size: 20px;"><b>horas</b></label>
+
+            <br>
+            <label for="practicoE" class="etiqueta" style="font-size: 20px;"><b>Periodo de duración de la asignatura:</b></label>
+            <input type="text" id="practicoE" name="practicoE" class="horas" style="width: 10%;">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="practicoE" class="etiqueta" style="font-size: 20px;"><b>Profesore(es), Autor(es):</b></label>
+            <input type="text" id="practicoE" name="practicoE" class="horas" style="width: 26%;">
+
+
+
+
+            
             <!-- Boton Guardar -->
             <a href="../public_html/principal.html" class="boton-guardar" onclick="mostrarAlerta()"><b>Guardar</b></a>
             <script>

@@ -850,6 +850,21 @@ table, th, td {
     border-radius: 7px;
     padding: 4px 0px;
 }
-.docencia{
+.horas{
     width: 5%;
+    border: 2px solid;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.etiqueta3{
+    margin-left: 9%;
+}
+.correoI{
+    width: 14%;
+    border: 2px solid;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 4px 0px;
 }
