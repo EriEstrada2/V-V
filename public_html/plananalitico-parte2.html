@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universidad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div style="display: flex; justify-content:space-between; align-items: flex-start; height: 100vh; padding: 0 40px;">
+            <!-- Encabezado -->
+            <a class="encabezado" style="display: flex;" align-items: center;>
+                <img src="/imagenes/universidad.png" style=" width: 100px; height:100px; margin-top: 25px; margin-right: 30px; filter: brightness(0) invert(1);">
+                <h1 class="universidad">Universidad</h1>
+                <!-- Usuario -->
+                <p class="nombre-usuario" style="display: inline;">Erika Elizabeth Estrada Chávez</p>
+                <img src="/imagenes/usuario.png" style=" filter: brightness(0) invert(1);" class="imagen">
+                <select name="rol" id="rol" class="elegir-rol" id="miOpcion">
+                    <option value="opcion1" data-href="#">Estudiante</option>
+                    <option value="opcion2" data-href="index.html">Docente</option>
+                </select>
+            </a>
+        </div>  
+    </nav>
+    <!-- header -->
+    <header >
+        <div class="barra-horizontal"></div>
+
+        <div class="texto-inicio-sesion">
+            <p><b>Plan Analítico Semanal</b></p>
+        </div>
+        <div class="cuadro-blanco-largo2">
+            <div class="barra-vertical"></div>
+            <label for="usuario" class="etiqueta" style="font-size: 30px; margin-top: 2px;"><b>INFORMACIÓN DE APRENDIZAJES</b></label><br><br>
+            <label for="asignatura" class="etiqueta" style="font-size: 20px;"><b>Unidad:</b></label>&nbsp;
+            <select name="rol" id="rol" class="opcionesAsig" id="miOpcion" style="width: 10%; height: 7%;">
+                <option value="opcion0"> </option>
+                <option value="opcion1">1</option>
+                <option value="opcion2">2</option>
+                <option value="opcion3">3</option>
+            </select>
+            <label for="periodo" class="etiqueta" style="font-size: 20px;"><b>Aprendizaje en contacto con el docente:</b></label>
+            <select name="rol" id="rol" class="opcionesAsig" id="miOpcion" style="width: 10%; height: 7%;">
+                <option value="opcion0">Síncrona</option>
+                <option value="opcion1">Asíncrona</option>
+            </select>
+
+            <br>
+            <label for="codigo" class="etiqueta" style="font-size: 20px;"><b>Semana:</b></label>&nbsp;
+            <input type="text" id="codigo" name="codigo" class="codigo" style="width: 10%; height: 7%;">
+            <label for="codigo" class="etiqueta" style="font-size: 20px;"><b>Tema:</b></label>&nbsp;
+            <input type="text" id="codigo" name="codigo" class="codigo" style="width: 40%; height: 7%;">
+            <label for="fecha-elab" class="etiqueta" style="font-size: 20px;"><b>Fecha / Día:</b></label>&nbsp;&nbsp;
+            <input type="date" id="fecha-elab" name="fecha-elab" class="fecha-elab" style="width: 10%;">
+
+            <br>
+            <label for="fecha-elab" class="etiqueta" style="font-size: 20px;"><b>Desde:</b></label>&nbsp;&nbsp;
+            <input type="date" id="fecha-elab" name="fecha-elab" class="fecha-elab" style="width: 10%; height: 7%;">
+            <label for="codigo" class="etiqueta" style="font-size: 20px;"><b>Actividad:</b></label>
+            <input type="text" id="codigo" name="codigo" class="codigo" style="width: 37.5%;">
+            <label for="fecha-elab" class="etiqueta" style="font-size: 15px;"><b>Duración en minutos:</b></label>
+            <input type="text" id="horaS" name="horaS" class="horas">
+            <label for="docenciaS" class="etiqueta" style="font-size: 15px;"><b>horas</b></label>
+            <label for="fecha-elab" class="etiqueta" style="font-size: 15px; margin-right: 10%;"><b>Duración en horas:</b></label>
+            <input type="text" id="horaS" name="horaS" class="horas">
+            <label for="docenciaS" class="etiqueta" style="font-size: 15px;"><b>horas</b></label>
+
+            <br>
+            <label for="fecha-elab" class="etiqueta" style="font-size: 20px;"><b>Hasta:</b></label>&nbsp;&nbsp;&nbsp;
+            <input type="date" id="fecha-elab" name="fecha-elab" class="fecha-elab" style="width: 10%; height: 7%;">
+            <label for="periodo" class="etiqueta" style="font-size: 20px;"><b>Aprendizaje práctico experimental:</b></label>
+
+            
+            <!-- Boton Nuevo -->
+            <a href="../public_html/plananalitico.html" class="boton-guardar" onclick="mostrarAlerta()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 30%; background-color: #AFDCEC;"><b>Nuevo</b></a>
+            
+            <!-- Boton Continuar -->
+            <a href="../public_html/plananalitico-parte2.html" class="boton-guardar" onclick="mostrarAlerta()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 45%;"><b>Continuar</b></a>
+
+            <!-- Boton Descartar -->
+            <a href="../public_html/plananalitico.html" class="boton-descartar" onclick="confirmar()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 60%;"><b>Eliminar</b></a>
+            <script>
+                function confirmar() {
+                    var resultado = confirm("¿Estás seguro de que deseas eliminar?");
+        
+                    if (resultado) {
+                        alert("Eliminado con éxito");
+                        // Aquí puedes agregar lógica adicional si se hace clic en "Sí"
+                    } else {
+                        alert("Cancelado");
+                        // Aquí puedes agregar lógica adicional si se hace clic en "No"
+                    }
+                }
+            </script>
+        </div>
+    </header>
+</body>
+</html>

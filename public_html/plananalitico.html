@@ -105,24 +105,20 @@
 
 
 
-
+            <!-- Boton Nuevo -->
+            <a href="../public_html/plananalitico.html" class="boton-guardar" onclick="mostrarAlerta()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 30%; background-color: #AFDCEC;"><b>Nuevo</b></a>
             
-            <!-- Boton Guardar -->
-            <a href="../public_html/principal.html" class="boton-guardar" onclick="mostrarAlerta()"><b>Guardar</b></a>
-            <script>
-                function mostrarAlerta() {
-                    alert("¡Guardado con éxito!");
-                }
-            </script>
+            <!-- Boton Continuar -->
+            <a href="../public_html/plananalitico-parte2.html" class="boton-guardar" onclick="mostrarAlerta()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 45%;"><b>Continuar</b></a>
 
             <!-- Boton Descartar -->
-            <a href="../public_html/principal.html" class="boton-descartar" onclick="confirmar()"><b>Descartar</b></a>
+            <a href="../public_html/plananalitico.html" class="boton-descartar" onclick="confirmar()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 60%;"><b>Eliminar</b></a>
             <script>
                 function confirmar() {
-                    var resultado = confirm("¿Estás seguro de que deseas descartar?");
+                    var resultado = confirm("¿Estás seguro de que deseas eliminar?");
         
                     if (resultado) {
-                        alert("Descartado con éxito");
+                        alert("Eliminado con éxito");
                         // Aquí puedes agregar lógica adicional si se hace clic en "Sí"
                     } else {
                         alert("Cancelado");

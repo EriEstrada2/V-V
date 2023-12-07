@@ -1,0 +1,79 @@
+/* INDEX */
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para pantallas más pequeñas */
+    .container {
+        width: 100%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('https://p1.pxfuel.com/preview/294/960/948/university-student-graduation-photo-hats.jpg');
+    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh; /* 100% de la altura de la ventana */
+    width: 100%; /* 100% del ancho de la ventana */
+}
+.encabezado{
+    display: block;
+    margin-left: 80px;
+    margin-top: 30px;
+    width: 110px;
+    height: 110px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.universidad{
+    font-size: 50px;
+    vertical-align: middle;
+    margin-top: 40px;
+    color: white;
+}
+.boton-regresar{
+    background-color: #F5B6CC;
+    border: 2px solid;
+    padding: 20px 50px;
+    font-size: 35px;
+    line-height: 1;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 70px;
+    display:inline-block;
+    text-decoration: none;
+}
+.barra-horizontal{
+    height: 10px;
+    background-color: white;
+    position: fixed;
+    top: 25%;
+    left: 7%;
+    width: 91%;
+    margin: 0 auto;
+}
+.texto-inicio-sesion{
+    text-align: center;
+    font-size: 50px;
+    position: fixed;
+    top: 28%;
+    left: 32%;
+    color: white;
+}
+.calendario{
+    max-width: 800px;
+    font-family: serif;
+    font-weight: bold;
+    color: black;
+    margin: 10% 10%;
+    float: left;
+    position: fixed;
+    top: 50%;
+}
+.fc-view-container .fc-view .fc-day {
+    width: 40px; /* Ajusta el ancho según tus necesidades */
+    height: 40px; /* Ajusta la altura según tus necesidades */
+}
