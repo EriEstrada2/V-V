@@ -1,0 +1,216 @@
+/* INDEX */
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para pantallas más pequeñas */
+    .container {
+        width: 100%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('https://p1.pxfuel.com/preview/294/960/948/university-student-graduation-photo-hats.jpg');
+    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh; /* 100% de la altura de la ventana */
+    width: 100%; /* 100% del ancho de la ventana */
+}
+.encabezado{
+    display: block;
+    margin-left: 80px;
+    margin-top: 30px;
+    width: 110px;
+    height: 110px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.universidad{
+    font-size: 50px;
+    vertical-align: middle;
+    margin-top: 40px;
+    color: white;
+}
+.boton{
+    background-color: #AFDCEC ;
+    border: 2px solid;
+    padding: 20px 50px;
+    font-size: 35px;
+    line-height: 1;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 70px;
+    display:inline-block;
+    text-decoration: none;
+}
+header{
+    text-align: center;
+}
+.texto-central{
+    text-align: center;
+    font-size: 50px;
+    position: fixed;
+    top: 40%;
+    left: 12%;
+    color: white;
+}
+.barra-horizontal{
+    height: 10px;
+    background-color: white;
+    position: fixed;
+    top: 25%;
+    left: 7%;
+    width: 91%;
+    margin: 0 auto;
+}
+.barra-horizontal-negra{
+    height: 5px;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 7%;
+    width: 70%;
+    margin: 0 auto;
+}
+.barra-vertical{
+    width: 5px;
+    background-color: black;
+    position: fixed;
+    top: 47%;
+    left: 26.8%;
+    height: 43%;
+    margin: 0 auto;
+}
+.texto-inicio-sesion{
+    text-align: center;
+    font-size: 50px;
+    position: fixed;
+    top: 28%;
+    left: 32%;
+    color: white;
+}
+.etiqueta{
+    padding: 15px;
+    padding-top: 10px;
+}
+.nombre-usuario{
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    top: 12%;
+    left: 60%;
+    color: white;
+    font-weight: bold;
+}
+.imagen{
+    width: 100px; 
+    height:100px; 
+    position: fixed;
+    text-align: left;
+    top: 7.5%;
+    right: 2%;
+}
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    position: fixed;
+    top: 30%;
+    left: 7%;
+    color: white;
+    margin-left: 10px;
+}
+.elegir-rol{
+    text-align: left;
+    position: fixed;
+    top: 18%;
+    right: 9.5%;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 7px;
+    padding: 7px 10px;
+}
+.cuadro-blanco-largo2{
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    width: 80%;
+    height: 62%;
+    font-size: 25px;
+    text-align: left;
+}
+.opcionesAsig{
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 7px;
+    padding: 7px 2px;
+}
+.opcionesAsig2{
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 7px;
+    padding: 7px;
+}
+.fecha-elab{
+    width: 15%;
+    border: 2px solid;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 4px 0px;
+}
+.horas{
+    width: 5%;
+    border: 2px solid;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.codigo{
+    width: 10%;
+    border: 2px solid;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 4px 0px;
+}
+.boton-guardar{
+    background-color: #B6F5CF;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 25px;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none;
+    position: fixed;
+    top: 91%;
+    left: 19%;
+}
+.boton-descartar{
+    background-color: #F5B6CC;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 25px;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none;
+    position: fixed;
+    top: 91%;
+    left: 30%;
+}
