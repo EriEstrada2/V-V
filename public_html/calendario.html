@@ -2,6 +2,26 @@
 <html lang="en">
 <head>
     <title>Universidad</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Mensual</title>
+
+    <!-- Estilos de FullCalendar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <!-- FullCalendar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+
+    <!-- Archivo de idioma en español para FullCalendar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/locale/es.js"></script>
+
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -24,8 +44,27 @@
         <div class="texto-inicio-sesion">
             <p><b>Calendario de la Semana</b></p>
         </div>
-        <div class="cuadro-blanco-largo">
-            
+        <div id="calendario" style="width: 50%; top: 10%; font-size: 15px; padding: 1px 1px;"></div>
+
+        <script>
+            $(document).ready(function() {
+                $('#calendario').fullCalendar({
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: ''
+                    },
+                    defaultView: 'month',
+                    fixedWeekCount: false,
+                    aspectRatio: 1,
+                    events: [], // Puedes agregar eventos si es necesario
+                    locale: 'es',
+                });
+            });
+        </script>
+
+
+
             <!-- Boton Guardar -->
             <a href="../public_html/principal.html" class="boton-guardar" onclick="mostrarAlerta()"><b>Guardar</b></a>
             <script>

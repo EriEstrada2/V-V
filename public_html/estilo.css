@@ -868,3 +868,22 @@ table, th, td {
     border-radius: 7px;
     padding: 4px 0px;
 }
+.calendario{
+    width: 50%;
+    position: fixed;
+    top: 10%;
+    left: 4%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 5px;;
+    color: white;
+}
+.fc-day, .fc-day-number {
+    font-size: 12px; /* Ajusta el tamaño del texto de los días según tus preferencias */
+    width: 2em; /* Ajusta el ancho de los cuadros de días según tus preferencias */
+    height: 2em; /* Ajusta la altura de los cuadros de días según tus preferencias */
+}
+
+.fc-axis {
+    font-size: 12px; /* Ajusta el tamaño del texto de los días de la semana según tus preferencias */
+}
