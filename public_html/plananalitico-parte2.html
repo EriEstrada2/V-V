@@ -47,55 +47,74 @@
             </select>
 
             <br>
-            <label for="codigo" class="etiqueta" style="font-size: 20px;"><b>Semana:</b></label>&nbsp;
-            <input type="text" id="codigo" name="codigo" class="codigo" style="width: 10%; height: 7%;">
-            <label for="codigo" class="etiqueta" style="font-size: 20px;"><b>Tema:</b></label>&nbsp;
-            <input type="text" id="codigo" name="codigo" class="codigo" style="width: 35%; height: 7%;">
-            <label for="fecha-elab" class="etiqueta" style="font-size: 20px;"><b>Fecha / Día:</b></label>&nbsp;&nbsp;
-            <input type="date" id="fecha-elab" name="fecha-elab" class="fecha-elab" style="width: 12.5%;">
+            <label for="semana" class="etiqueta" style="font-size: 20px;"><b>Semana:</b></label>&nbsp;
+            <input type="text" id="semana" name="semana" class="codigo" style="width: 10%; height: 7%;">
+            <label for="tema" class="etiqueta" style="font-size: 20px;"><b>Tema:</b></label>&nbsp;
+            <input type="text" id="tema" name="tema" class="codigo" style="width: 35%; height: 7%;">
+            <label for="fecha" class="etiqueta" style="font-size: 20px;"><b>Fecha / Día:</b></label>&nbsp;&nbsp;
+            <input type="date" id="fecha" name="fecha" class="fecha-elab" style="width: 12.5%;">
 
             <br>
-            <label for="fecha-elab" class="etiqueta" style="font-size: 20px; position: fixed; top: 66%; left: 10%;"><b>Desde:</b></label>
-            <input type="date" id="fecha-elab" name="fecha-elab" class="fecha-elab" style="width: 8%; height: 4%; position: fixed; top: 67.5%; left: 18.2%;">
-            <label for="codigo" class="etiqueta" style="font-size: 20px; position: fixed; top: 57%; left: 26.6%;"><b>Actividad:</b></label>
-            <input type="text" id="codigo" name="codigo" class="codigo" style="width: 32.5%; position: fixed; top: 58%; left: 35.5%; width: 26%;">
-            <label for="fecha-elab" class="etiqueta" style="font-size: 15px; position: fixed; top: 58%; right: 25.7%;"><b>Duración en minutos:</b></label>
-            <input type="text" id="horaS" name="horaS" class="horas" style="position: fixed; top: 59%; right: 21%; width: 4%;">
-            <label for="docenciaS" class="etiqueta" style="font-size: 15px; position: fixed; top: 58%; right: 16%;"><b>horas</b></label><br>
-            <label for="fecha-elab" class="etiqueta" style="font-size: 15px; position: fixed; top: 62%; right: 26.7%;"><b>Duración en horas:</b></label>
-            <input type="text" id="horaS" name="horaS" class="horas" style="position: fixed; top: 63%; right: 21%; width: 4%;">
-            <label for="docenciaS" class="etiqueta" style="font-size: 15px; position: fixed; top: 62%; right: 16%;"><b>horas</b></label><br>
+            <label for="desde" class="etiqueta" style="font-size: 20px; position: fixed; top: 66%; left: 10%;"><b>Desde:</b></label>
+            <input type="date" id="desde" name="desde" class="fecha-elab" style="width: 8%; height: 4%; position: fixed; top: 67.5%; left: 18.2%;">
+            <label for="actividad" class="etiqueta" style="font-size: 20px; position: fixed; top: 57%; left: 26.6%;"><b>Actividad:</b></label>
+            <input type="text" id="actividad" name="actividad" class="codigo" style="width: 32.5%; position: fixed; top: 58%; left: 35.5%; width: 26%;">
+            <label for="duracionM" class="etiqueta" style="font-size: 15px; position: fixed; top: 58%; right: 25.7%;"><b>Duración en minutos:</b></label>
+            <input type="text" id="duracionM" name="duracionM" class="horas" style="position: fixed; top: 59%; right: 21%; width: 4%;">
+            <label for="duracionM" class="etiqueta" style="font-size: 15px; position: fixed; top: 58%; right: 16%;"><b>horas</b></label><br>
+            <label for="duracionH" class="etiqueta" style="font-size: 15px; position: fixed; top: 62%; right: 26.7%;"><b>Duración en horas:</b></label>
+            <input type="text" id="duracionH" name="duracionH" class="horas" style="position: fixed; top: 63%; right: 21%; width: 4%;">
+            <label for="duracionH" class="etiqueta" style="font-size: 15px; position: fixed; top: 62%; right: 16%;"><b>horas</b></label><br>
+
+            <!-- Boton Añadir -->
+                <a href="../public_html/plananalitico-parte2.html">
+                    <img src="/imagenes/mas.png" class="mas" style="position: fixed; top: 58%; right: 12.2%;">
+                    <p class="añadir-mas" style="position: fixed; top: 64%; right: 11.5%;">Añadir Más</p>
+                </a>
 
             <br>
-            <label for="fecha-elab" class="etiqueta" style="font-size: 20px;"><b>Hasta:</b></label>&nbsp;&nbsp;&nbsp;
-            <input type="date" id="fecha-elab" name="fecha-elab" class="fecha-elab" style="width: 10%; height: 7%;">
-            <label for="periodo" class="etiqueta" style="font-size: 20px; position: fixed; top: 65.5%; left: 26.6%;"><b>Aprendizaje práctico experimental:</b></label><br>
-            <label for="codigo" class="etiqueta" style="font-size: 20px; position: fixed; top: 70.5%; left: 26.6%;"><b>Actividad:</b></label>
+            <label for="hasta" class="etiqueta" style="font-size: 20px;"><b>Hasta:</b></label>&nbsp;&nbsp;&nbsp;
+            <input type="date" id="hasta" name="hasta" class="fecha-elab" style="width: 10%; height: 7%;">
+            <label for="titulo" class="etiqueta" style="font-size: 20px; position: fixed; top: 65.5%; left: 26.6%;"><b>Aprendizaje práctico experimental:</b></label><br>
+            <label for="titulo" class="etiqueta" style="font-size: 20px; position: fixed; top: 70.5%; left: 26.6%;"><b>Actividad:</b></label>
             <input type="text" id="codigo" name="codigo" class="codigo" style="width: 26%; position: fixed; top: 71%; left: 35.5%;">
             <label for="fecha-elab" class="etiqueta" style="font-size: 15px; position: fixed; top: 69%; right: 25.7%;"><b>Duración en minutos:</b></label>
             <input type="text" id="horaS" name="horaS" class="horas" style="position: fixed; top: 70%; right: 21%; width: 4%;">
             <label for="docenciaS" class="etiqueta" style="font-size: 15px; position: fixed; top: 69%; right: 16%;"><b>horas</b></label><br>
             <label for="fecha-elab" class="etiqueta" style="font-size: 15px; position: fixed; top: 73%; right: 26.7%;"><b>Duración en horas:</b></label>
             <input type="text" id="horaS" name="horaS" class="horas" style="position: fixed; top: 74%; right: 21%; width: 4%;">
-            <label for="docenciaS" class="etiqueta" style="font-size: 15px; position: fixed; top: 73%; right: 16%;"><b>horas</b></label><br>
-
-            <label for="periodo" class="etiqueta" style="font-size: 20px; position: fixed; top: 78%; left: 26.6%;"><b>Aprendizaje autónomo:</b></label><br>
+            <label for="docenciaS" class="etiqueta" style="font-size: 15px; position: fixed; top: 73%; right: 16%;"><b>horas</b></label>
+            <!-- Boton Añadir -->
+            <a href="../public_html/plananalitico-parte2.html">
+                <img src="/imagenes/mas.png" class="mas" style="position: fixed; top: 69%; right: 12.2%;">
+                <p class="añadir-mas" style="position: fixed; top: 75%; right: 11.5%;">Añadir Más</p>
+            </a>
+            
+            <br>
+            <label for="titulo" class="etiqueta" style="font-size: 20px; position: fixed; top: 78%; left: 26.6%;"><b>Aprendizaje autónomo:</b></label><br>
             <label for="codigo" class="etiqueta" style="font-size: 20px; position: fixed; top: 83%; left: 26.6%;"><b>Actividad:</b></label>
             <input type="text" id="codigo" name="codigo" class="codigo" style="width: 26%; position: fixed; top: 84%; left: 35.5%;">
             <label for="fecha-elab" class="etiqueta" style="font-size: 15px; position: fixed; top: 81%; right: 25.7%;"><b>Duración en minutos:</b></label>
             <input type="text" id="horaS" name="horaS" class="horas" style="position: fixed; top: 82%; right: 21%; width: 4%;">
-            <label for="docenciaS" class="etiqueta" style="font-size: 15px; position: fixed; top: 80%; right: 16%;"><b>horas</b></label><br>
+            <label for="docenciaS" class="etiqueta" style="font-size: 15px; position: fixed; top: 81%; right: 16%;"><b>horas</b></label><br>
             <label for="fecha-elab" class="etiqueta" style="font-size: 15px; position: fixed; top: 85%; right: 26.7%;"><b>Duración en horas:</b></label>
             <input type="text" id="horaS" name="horaS" class="horas" style="position: fixed; top: 86%; right: 21%; width: 4%;">
-            <label for="docenciaS" class="etiqueta" style="font-size: 15px; position: fixed; top: 85%; right: 16%;"><b>horas</b></label><br>
+            <label for="docenciaS" class="etiqueta" style="font-size: 15px; position: fixed; top: 85%; right: 16%;"><b>horas</b></label>
+            <!-- Boton Añadir -->
+            <a href="../public_html/plananalitico-parte2.html">
+                <img src="/imagenes/mas.png" class="mas" style="position: fixed; top: 81%; right: 12.2%;">
+                <p class="añadir-mas" style="position: fixed; top: 87%; right: 11.5%;">Añadir Más</p>
+            </a>
+
+            <br>
 
 
             
             <!-- Boton Nuevo -->
             <a href="../public_html/plananalitico.html" class="boton-guardar" onclick="mostrarAlerta()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 30%; background-color: #AFDCEC;"><b>Nuevo</b></a>
             
-            <!-- Boton Continuar -->
-            <a href="../public_html/plananalitico-parte2.html" class="boton-guardar" onclick="mostrarAlerta()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 45%;"><b>Continuar</b></a>
+            <!-- Boton Guardar -->
+            <a href="../public_html/plananalitico-parte2.html" class="boton-guardar" onclick="mostrarAlerta()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 45%;"><b>Guardar</b></a>
 
             <!-- Boton Descartar -->
             <a href="../public_html/plananalitico.html" class="boton-descartar" onclick="confirmar()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 60%;"><b>Eliminar</b></a>
