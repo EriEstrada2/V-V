@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universidad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div style="display: flex; justify-content:space-between; align-items: flex-start; height: 100vh; padding: 0 40px;">
+            <!-- Encabezado -->
+            <a class="encabezado" style="display: flex;" align-items: center;>
+                <img src="/imagenes/universidad.png" style=" width: 100px; height:100px; margin-top: 25px; margin-right: 30px; filter: brightness(0) invert(1);">
+                <h1 class="universidad">Universidad</h1>
+                <!-- Boton Regresar -->
+                <a href="../public_html/principal.html" class="boton-regresar"><b>Regresar</b></a>
+            </a>
+        </div>  
+    </nav>
+    <!-- header -->
+    <header >
+        <div class="barra-horizontal"></div>
+        <div class="texto-inicio-sesion">
+            <p><b>Calendario de la Semana</b></p>
+        </div>
+        <div class="cuadro-blanco-largo">
+            
+            <!-- Boton Guardar -->
+            <a href="../public_html/principal.html" class="boton-guardar" onclick="mostrarAlerta()"><b>Guardar</b></a>
+            <script>
+                function mostrarAlerta() {
+                    alert("¡Guardado con éxito!");
+                }
+            </script>
+
+            <!-- Boton Descartar -->
+            <a href="../public_html/principal.html" class="boton-descartar" onclick="confirmar()"><b>Descartar</b></a>
+            <script>
+                function confirmar() {
+                    var resultado = confirm("¿Estás seguro de que deseas descartar?");
+        
+                    if (resultado) {
+                        alert("Descartado con éxito");
+                        // Aquí puedes agregar lógica adicional si se hace clic en "Sí"
+                    } else {
+                        alert("Cancelado");
+                        // Aquí puedes agregar lógica adicional si se hace clic en "No"
+                    }
+                }
+            </script>
+        </div>
+    </header>
+</body>
+</html>
