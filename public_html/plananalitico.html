@@ -11,14 +11,14 @@
         <div style="display: flex; justify-content:space-between; align-items: flex-start; height: 100vh; padding: 0 40px;">
             <!-- Encabezado -->
             <a class="encabezado" style="display: flex;" align-items: center;>
-                <img src="/imagenes/universidad.png" style=" width: 100px; height:100px; margin-top: 25px; margin-right: 30px; filter: brightness(0) invert(1);">
+                <img src="/V-V/imagenes/universidad.png" style=" width: 100px; height:100px; margin-top: 25px; margin-right: 30px; filter: brightness(0) invert(1);">
                 <h1 class="universidad">Universidad</h1>
                 <!-- Usuario -->
                 <p class="nombre-usuario" style="display: inline;">Erika Elizabeth Estrada Chávez</p>
-                <img src="/imagenes/usuario.png" style=" filter: brightness(0) invert(1);" class="imagen">
+                <img src="/V-V/imagenes/usuario.png" style=" filter: brightness(0) invert(1);" class="imagen">
                 <select name="rol" id="rol" class="elegir-rol" id="miOpcion">
-                    <option value="opcion1" data-href="#">Estudiante</option>
-                    <option value="opcion2" data-href="index.html">Docente</option>
+                    <option value="1" data-href="#">Estudiante</option>
+                    <option value="2" data-href="index.html">Docente</option>
                 </select>
             </a>
         </div>  
@@ -31,34 +31,35 @@
             <p><b>Plan Analítico Semanal</b></p>
         </div>
         <div class="cuadro-blanco-largo2">
+        <form action="http://localhost:3000/guardarDatos" method="POST">
             <label for="usuario" class="etiqueta" style="font-size: 30px; margin-top: 2px;"><b>INFORMACIÓN DE LA ASIGNATURA</b></label><br><br>
             <label for="asignatura" class="etiqueta" style="font-size: 20px;"><b>Asignatura:</b></label>&nbsp;
-            <select name="rol" id="rol" class="opcionesAsig" id="miOpcion">
-                <option value="opcion0" data-href="#">Seleccione una opción</option>
-                <option value="opcion1" data-href="#">Aplicaciones Informáticas II</option>
-                <option value="opcion2" data-href="index.html">Técnicas de Simulación</option>
-                <option value="opcion3" data-href="index.html">Validación y Verificación</option>
+            <select name="asignatura" class="opcionesAsig" id="miOpcion">
+                <option value="0" data-href="#">Seleccione una opción</option>
+                <option value="1" data-href="#">Aplicaciones Informáticas II</option>
+                <option value="2" data-href="index.html">Técnicas de Simulación</option>
+                <option value="3" data-href="index.html">Validación y Verificación</option>
             </select>
 
             <label for="codigo" class="etiqueta" style="font-size: 20px;"><b>Código:</b></label>
             <input type="text" id="codigo" name="codigo" class="codigo">
 
             <label for="periodo" class="etiqueta" style="font-size: 20px;"><b>Periodo Académico:</b></label>
-            <select name="rol" id="rol" class="opcionesAsig2" id="miOpcion">
-                <option value="opcion0">Seleccione una opción</option>
-                <option value="opcion1">04 Abril 2022 - 16 de Agosto 2022</option>
-                <option value="opcion2">26 de Septiembre 2022 - 2 de Marzo 2023</option>
-                <option value="opcion3">03 de Abril 2023 - 16 de Agosto 2023</option>
-                <option value="opcion4">10 de Octubre 2023 - 4 de Marzo 2024</option>
+            <select name="periodo" class="opcionesAsig2" id="miOpcion">
+                <option value="0">Seleccione una opción</option>
+                <option value="1">04 Abril 2022 - 16 de Agosto 2022</option>
+                <option value="2">26 de Septiembre 2022 - 2 de Marzo 2023</option>
+                <option value="3">03 de Abril 2023 - 16 de Agosto 2023</option>
+                <option value="4">10 de Octubre 2023 - 4 de Marzo 2024</option>
             </select>
 
             <br><br>
             <label for="periodo" class="etiqueta" style="font-size: 20px;"><b>Aprendizaje en contacto con el docente:</b></label>
             <label for="modalidad" class="etiqueta" style="font-size: 20px;"><b>Modalidad:</b></label>
             <select name="rol" id="rol" class="opcionesAsig2" id="miOpcion">
-                <option value="opcion0" data-href="#">Seleccione una opción</option>
-                <option value="opcion1" data-href="#">En línea</option>
-                <option value="opcion2" data-href="#">Hibrida</option>
+                <option value="0" data-href="#">Seleccione una opción</option>
+                <option value="1" data-href="#">En línea</option>
+                <option value="2" data-href="#">Hibrida</option>
             </select>
 
             <label for="fecha-elab" class="etiqueta" style="font-size: 20px;"><b>Fecha Elaboración:</b></label>
@@ -67,19 +68,19 @@
 
             <br>
             <label for="docenciaS" class="etiqueta3" style="font-size: 15px;"><b>Docencia síncrona:</b></label>&nbsp;
-            <input type="text" id="horaS" name="horaS" class="horas">
+            <input type="number" id="horaS" name="horaS" class="horas">
             <label for="docenciaS" class="etiqueta" style="font-size: 15px;"><b>horas</b></label>
             <br>
             <label for="docenciaA" class="etiqueta3" style="font-size: 15px;"><b>Docencia asíncrona:</b></label>
-            <input type="text" id="horaS" name="horaS" class="horas">
+            <input type="number" id="horaS" name="horaS" class="horas">
             <label for="docenciaA" class="etiqueta" style="font-size: 15px;"><b>horas</b></label>
 
             <label for="metodologia" class="etiqueta" style="font-size: 20px;"><b>Metodología:</b></label>
             <select name="rol" id="rol" class="opcionesAsig2" id="miOpcion">
-                <option value="opcion0" data-href="#">Seleccione una opción</option>
-                <option value="opcion1" data-href="#">Scrum</option>
-                <option value="opcion2" data-href="#">Kanban</option>
-                <option value="opcion3" data-href="#">Scrumban</option>
+                <option value="0" data-href="#">Seleccione una opción</option>
+                <option value="1" data-href="#">Scrum</option>
+                <option value="2" data-href="#">Kanban</option>
+                <option value="3" data-href="#">Scrumban</option>
             </select>
 
             <label for="correoI" class="etiqueta" style="font-size: 20px;"><b>Correo institucional:</b></label>
@@ -102,8 +103,8 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label for="practicoE" class="etiqueta" style="font-size: 20px;"><b>Profesore(es), Autor(es):</b></label>
             <input type="text" id="practicoE" name="practicoE" class="horas" style="width: 26%;">
-
-
+            <button type="submit">Guardar Datos</button>
+        </form>
 
             <!-- Boton Nuevo -->
             <a href="../public_html/plananalitico.html" class="boton-guardar" onclick="mostrarAlerta()" style="width: 10%; padding: 5px 15px; position: fixed; top: 91%; left: 30%; background-color: #AFDCEC;"><b>Nuevo</b></a>
