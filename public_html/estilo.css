@@ -874,6 +874,7 @@ table, th, td {
     font-weight: bold;
     color: black;
     margin: 10% 10%;
+    float: left;
 }
 .mes{
     text-align: center;
@@ -883,14 +884,14 @@ table, th, td {
     color: black;
     border:3px solid;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 15%;
     padding: 10px 30px;
 }
 .calendarito{
-    width: 100%;
+    width: 200px;
     text-align: center;
-    font-size: 27px;
+    font-size: 20px;
     border-collapse: collapse;
     border:5px solid black;
     font-family: Elaphant;
@@ -898,23 +899,4 @@ table, th, td {
     top: 50%;
     left: 0;
     padding: 10px 10px;
-}
-.cuadros{
-    padding: 5px; 
-    background-color: white; 
-    border-color: black;
-    font-size: 18px;
-}
-.cuadros2{
-    padding: 1px; 
-    background-color: white; 
-    border-color: black;
-    font-size: 12px;
-}
-.cuadros, 
-.cuadros2{
-    width: 10px;
-    height: 30px;
-    padding: 5px;
-    box-sizing: border-box;
 }

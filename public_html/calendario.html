@@ -2,6 +2,23 @@
 <html lang="en">
 <head>
     <title>Universidad</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos de FullCalendar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <!-- FullCalendar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+
+    <!-- Archivo de idioma en español para FullCalendar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/locale/es.js"></script>
+
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -24,79 +41,25 @@
         <div class="texto-inicio-sesion">
             <p><b>Calendario de la Semana</b></p>
         </div>
-
-        <div class="calendario">
-            <div class="mes">
-                        <strong>Diciembre</strong>
-                        <strong>2023</strong>
-            </div><br>
-            <table class="calendarito" style="position: fixed; top: 50%;">
-                        <tr>
-                                    <th class="cuadros">Dom</th>
-                                    <th class="cuadros">Lun</th>
-                                    <th class="cuadros">Mar</th>
-                                    <th class="cuadros">Mie</th>
-                                    <th class="cuadros">Jue</th>
-                                    <th class="cuadros">Vie</th>
-                                    <th class="cuadros">Sab</th>
-                        </tr>
-                        <tr>
-                                    <td class="cuadros2" style="color:darkgrey;">26</td>
-                                    <td class="cuadros2" style="color:darkgrey;">27</td>
-                                    <td class="cuadros2" style="color:darkgrey;">28</td>
-                                    <td class="cuadros2" style="color:darkgrey;">29</td>
-                                    <td class="cuadros2" style="color:darkgrey;">30</td>
-                                    <td class="cuadros2">1</td>
-                                    <td class="cuadros2">2</td>
-                        </tr>
-                        <tr>
-                                    <td class="cuadros2">3</td>
-                                    <td class="cuadros2">4</td>
-                                    <td class="cuadros2">5</td>
-                                    <td class="cuadros2">6</td>
-                                    <td class="cuadros2">7</td>
-                                    <td class="cuadros2">8</td>
-                                    <td class="cuadros2">9</tr>
-                        </tr>
-                        <tr>
-                                    <td class="cuadros2">10</td>
-                                    <td class="cuadros2">11</td>
-                                    <td class="cuadros2">12</td>
-                                    <td class="cuadros2">13</td>
-                                    <td class="cuadros2">14</td>
-                                    <td class="cuadros2">15</td>
-                                    <td class="cuadros2">16</td>
-                        </tr>
-                        <tr>
-                                    <td class="cuadros2">16</td>
-                                    <td class="cuadros2">17</td>
-                                    <td class="cuadros2">18</td>
-                                    <td class="cuadros2">19</td>
-                                    <td class="cuadros2">20</td>
-                                    <td class="cuadros2">21</td>
-                                    <td class="cuadros2">22</td>
-                        </tr>
-                        <tr>
-                                    <td class="cuadros2">23</td>
-                                    <td class="cuadros2">24</td>
-                                    <td class="cuadros2">25</td>
-                                    <td class="cuadros2">26</td>
-                                    <td class="cuadros2">27</td>
-                                    <td class="cuadros2">28</td>
-                                    <td class="cuadros2">29</td>
-                        </tr>
-                        <tr>
-                                    <td class="cuadros2">30</td>
-                                    <td class="cuadros2">31</td>
-                                    <td class="cuadros2" style="color:darkgrey;">1</td>
-                                    <td class="cuadros2" style="color:darkgrey;">2</td>
-                                    <td class="cuadros2" style="color:darkgrey;">3</td>
-                                    <td class="cuadros2" style="color:darkgrey;">4</td>
-                                    <td class="cuadros2" style="color:darkgrey;">5</td>
-                </tr>
-            </table>
-</div>
-
+        <div id="calendario" style="width: 50%; top: 10%; font-size: 15px; padding: 1px 1px; background-color: #f0f0f0; border: 1px solid #ccc;"></div>
+            <script>
+                $(document).ready(function() {
+                    $('#calendario').fullCalendar({
+                        header: {
+                            left: 'prev,next today',
+                            center: 'title',
+                            right: ''
+                        },
+                        defaultView: 'month',
+                        fixedWeekCount: false,
+                        aspectRatio: 1,
+                        events: [], // Puedes agregar eventos si es necesario
+                        locale: 'es',
+                        eventBorderColor: '#333',
+                    });
+                });
+            </script>
+        </div>
     </header>
 </body>
 </html>
